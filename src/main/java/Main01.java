@@ -68,12 +68,12 @@ public class Main01 {
         FileWriter record = new FileWriter("result_shortest_route.txt", true);
         record.append("\n").append("---------- new calculation -----------").append("\n");
         record.append("Visited cities: ").append(String.valueOf(visitedCities.size())).append("\n");
-        record.append("Total traveled distance: ").append(String.format("%.2f", totalDistance)).append("\n");
+        record.append("Total travelled distance: ").append(String.format("%.2f", totalDistance)).append("\n");
         record.append("Execution time approx.: ").append(String.valueOf(interval.get(SECONDS))).append(" s").append("\n");
-//        record.append("Visited cities:").append("\n");
-//        for (City visitedCity : visitedCities) {
-//            record.append(visitedCity.toString()).append("\n");
-//        }
+        record.append("Visited cities (in visit order):").append("\n");
+        for (City visitedCity : visitedCities) {
+            record.append(visitedCity.toString()).append("\n");
+        }
         record.close();
     }
 }
