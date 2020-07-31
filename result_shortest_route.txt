@@ -1,21 +1,16 @@
 
-
 ---------- new calculation -----------
-Visited cities: 2000
-Total traveled distance: 959622.25
-Execution time approx.: 10 s
-
----------- new calculation -----------
-Visited cities: 2500
-Total traveled distance: 1173695.85
-Execution time approx.: 24 s
-
----------- new calculation -----------
-Visited cities: 1000
-Total traveled distance: 484582.00
-Execution time approx.: 1 s
-
----------- new calculation -----------
-Visited cities: 1500
-Total traveled distance: 712632.32
-Execution time approx.: 4 s
+Visited cities: 10
+Total travelled distance: 4562.65
+Execution time approx.: 0 s
+Visited cities (in visit order):
+City{id=0, name='Deku Royalty924', longitude=780.0, latitude=366.0}
+City{id=3, name='Skull Kid1492', longitude=714.0, latitude=662.0}
+City{id=6, name='Old Man2436', longitude=351.0, latitude=579.0}
+City{id=4, name='Vaati634', longitude=284.0, latitude=11.0}
+City{id=7, name='Christine2798', longitude=336.0, latitude=50.0}
+City{id=1, name='Link1992', longitude=192.0, latitude=524.0}
+City{id=5, name='Ree Dahee2283', longitude=635.0, latitude=298.0}
+City{id=9, name='Rabbits2250', longitude=37.0, latitude=497.0}
+City{id=8, name='Tarin1266', longitude=448.0, latitude=937.0}
+City{id=2, name='Shee Vaneer413', longitude=22.0, latitude=903.0}

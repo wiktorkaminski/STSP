@@ -14,8 +14,22 @@ public class Main01 {
     private static Duration interval;
 
     public static void main(String[] args) throws IOException {
+        Scanner scn = new Scanner(System.in);
 
-        WorldBuilder.generateCities(1500);
+        System.out.print("Do you want to create new World (y/n): ");
+        boolean newWorldRequest = false;
+        String inputStr = scn.nextLine();
+        int amount = 10;
+        if (inputStr.toLowerCase().equals("y")) {
+            newWorldRequest = true;
+            System.out.print("How many Cities has to be created? (int | default 10): ");
+            amount = scn.nextInt();
+            scn.nextLine();
+        }
+
+        if (newWorldRequest) {
+            WorldBuilder.generateCities(amount);
+        }
 
 //        --- exec time measure below this point
         Instant startClock = Instant.now();
@@ -30,17 +44,6 @@ public class Main01 {
 
         interval = Duration.between(startClock, stopClock);
         recordResult();
-
-//        WorldBuilder.generateCities(100);
-
-//        WorldBuilder.createWorld();
-//        float[][] distance = WorldBuilder.computeDistance();
-//        for (int i = 0; i < distance.length; i++) {
-//            for (int j = 0; j < distance.length; j++) {
-//                System.out.print(distance[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
     }
 
     private static void computeRoute(City startCity, List<City> myWorld, float[][] distanceMatrix) {
