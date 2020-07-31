@@ -1,0 +1,21 @@
+
+
+---------- new calculation -----------
+Visited cities: 2000
+Total traveled distance: 959622.25
+Execution time approx.: 10 s
+
+---------- new calculation -----------
+Visited cities: 2500
+Total traveled distance: 1173695.85
+Execution time approx.: 24 s
+
+---------- new calculation -----------
+Visited cities: 1000
+Total traveled distance: 484582.00
+Execution time approx.: 1 s
+
+---------- new calculation -----------
+Visited cities: 1500
+Total traveled distance: 712632.32
+Execution time approx.: 4 s
